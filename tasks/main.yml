@@ -1,0 +1,13 @@
+---
+  - stat: path=/usr/local/bin/pip
+    register: pip_stat
+
+  - name: Download pip
+    get_url: >
+      url="{{ pip_installer_url }}"
+      dest="{{ pip_temp_install_dir }}"
+    when: pip_stat.stat.exists == False
+
+  - name: Install pip
+    shell: "{{ pip_python_exe }} {{ pip_temp_install_dir }}/get-pip.py"
+    when: pip_stat.stat.exists == False

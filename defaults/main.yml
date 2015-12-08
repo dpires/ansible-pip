@@ -1,0 +1,7 @@
+---
+pip_pip_exe: pip
+pip_python_exe: python
+pip_temp_install_dir: /tmp
+pip_install_file: get-pip.py
+pip_installer_url: "https://bootstrap.pypa.io/{{ pip_install_file}}"
+
