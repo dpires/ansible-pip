@@ -1,9 +1,9 @@
 [![Build Status](https://travis-ci.org/dpires/ansible-pip.svg?branch=master)](https://travis-ci.org/dpires/ansible-pip)
 
-Role Name
+ansible-pip
 =========
 
-An Ansible role to install pip.
+An Ansible role for pip
 
 Requirements
 ------------
